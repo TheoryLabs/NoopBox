@@ -14,7 +14,7 @@ export const projectNameConstantPropsHandler = (strPatterns = staticPropsList, p
     let suffixCharStr = strPatterns[1].toString()
     let bodySubStr = strPatterns[2].toString().toLowerCase()
 
-    let derivedScopedName = `${prefixCharStr}${bodySubStr}${suffixCharStr}`
+    let derivedProjectName = `${prefixCharStr}${bodySubStr}${suffixCharStr}`
 
     let validationHandlers = [...patternValidators]
     let validationChecks = { isString: null, isLowerCase: null, isProjectName: null }
