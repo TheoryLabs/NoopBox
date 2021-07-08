@@ -29,7 +29,8 @@
     "build:prod": "yarn clean:node-modules && yarn bootstrap:prod && yarn prepare && yarn status",
     "prepare": "oao prepublish --copy-attrs 'keywords,author,license,homepage,bugs,repository'",
     "reset:versions": "oao reset-all-versions '$(echo \"$0\")'",
-    "release": "oao publish"
+    "publish:oao-script": "oao publish",
+    "publish:npm": "npm run publish:oao-script"
   },
   "devDependencies": {
     "oao": "^2.0.2"
