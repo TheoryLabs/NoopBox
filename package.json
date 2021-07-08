@@ -27,7 +27,7 @@
     "bootstrap:prod": "oao bootstrap --prod",
     "clean:node-modules": "oao clean",
     "build:prod": "yarn clean:node-modules && yarn bootstrap:prod",
-    "release:prepare": "oao prepublish --copy-attrs 'keywords,author,license,homepage,bugs,repository'"
+    "prepare": "oao prepublish --copy-attrs 'keywords,author,license,homepage,bugs,repository'"
   },
   "devDependencies": {
     "oao": "^2.0.2"
