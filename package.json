@@ -2,10 +2,33 @@
   "name": "@theorylabs/noopbox-monorepo",
   "version": "0.0.1",
   "private": true,
+  "author": "Branden Dane <Dane@TheoryLabs.dev> (https://TheoryLabs.dev)",
+  "keywords": [
+     "theorylabs",
+     "noopbox"
+  ],
   "license": "MIT",
+  "homepage": "https://github.com/TheoryLabs/NoopBox#README",
+  "bugs": {
+    "url" : "https://github.com/TheoryLabs/NoopBox/issues",
+    "email" : "Dane@TheoryLabs.dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheoryLabs/NoopBox.git"
+  },
   "workspaces": [
     "common/*"
   ],
+  "scripts": {
+    "envs": "node -e 'console.log(process.env)' | grep npm",
+    "status": "oao status",
+    "bootstrap:dev": "NODE_ENV='development' oao bootstrap",
+    "bootstrap:prod": "oao bootstrap --prod",
+    "clean:node-modules": "oao clean",
+    "build:prod": "yarn clean:node-modules && yarn bootstrap:prod",
+    "release:prepare": "oao prepublish --copy-attrs 'keywords,author,license,homepage,bugs,repository'"
+  },
   "devDependencies": {
     "oao": "^2.0.2"
   }
