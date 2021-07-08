@@ -7,8 +7,8 @@ import {
 } from './projectNamePropsHandlers'
 
 
-const ScopedNameConstantsHandler = scopedNameConstantPropsHandler
-const ProjectNameConstantsHandler = projectNameConstantPropsHandler
+const ScopedNameDefinitions = scopedNameConstantPropsHandler
+const ProjectNameDefinitions = projectNameConstantPropsHandler
 
 
 export {
