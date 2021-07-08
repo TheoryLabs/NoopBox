@@ -1,12 +1,12 @@
 {
   "name": "@theorylabs/noopbox-constants",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "license": "MIT",
   "private": false,
   "main": "src/index.js",
   "module": "src/main.js",
   "dependencies": {
-    "@theorylabs/noopbox-utils": "^0.0.3",
+    "@theorylabs/noopbox-utils": "^0.0.1",
     "esm": "^3.2.25"
   },
   "keywords": [
