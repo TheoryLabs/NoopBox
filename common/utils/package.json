@@ -1,0 +1,11 @@
+{
+  "name": "@theorylabs/noopbox-utils",
+  "version": "0.0.1",
+  "license": "MIT",
+  "private": false,
+  "main": "src/index.js",
+  "module": "src/main.js",
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
+}

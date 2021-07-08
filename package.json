@@ -1,0 +1,12 @@
+{
+  "name": "@theorylabs/noopbox-monorepo",
+  "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "common/*"
+  ],
+  "devDependencies": {
+    "oao": "^2.0.2"
+  }
+}
