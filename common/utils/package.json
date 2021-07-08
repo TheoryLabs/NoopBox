@@ -1,6 +1,6 @@
 {
   "name": "@theorylabs/noopbox-utils",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "license": "MIT",
   "private": false,
   "main": "src/index.js",
