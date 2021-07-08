@@ -4,14 +4,14 @@
   "private": true,
   "author": "Branden Dane <Dane@TheoryLabs.dev> (https://TheoryLabs.dev)",
   "keywords": [
-     "theorylabs",
-     "noopbox"
+    "theorylabs",
+    "noopbox"
   ],
   "license": "MIT",
   "homepage": "https://github.com/TheoryLabs/NoopBox#README",
   "bugs": {
-    "url" : "https://github.com/TheoryLabs/NoopBox/issues",
-    "email" : "Dane@TheoryLabs.dev"
+    "url": "https://github.com/TheoryLabs/NoopBox/issues",
+    "email": "Dane@TheoryLabs.dev"
   },
   "repository": {
     "type": "git",
@@ -26,8 +26,10 @@
     "bootstrap:dev": "NODE_ENV='development' oao bootstrap",
     "bootstrap:prod": "oao bootstrap --prod",
     "clean:node-modules": "oao clean",
-    "build:prod": "yarn clean:node-modules && yarn bootstrap:prod",
-    "prepare": "oao prepublish --copy-attrs 'keywords,author,license,homepage,bugs,repository'"
+    "build:prod": "yarn clean:node-modules && yarn bootstrap:prod && yarn prepare && yarn status",
+    "prepare": "oao prepublish --copy-attrs 'keywords,author,license,homepage,bugs,repository'",
+    "reset:versions": "oao reset-all-versions '$(echo \"$0\")'",
+    "release": "oao publish"
   },
   "devDependencies": {
     "oao": "^2.0.2"
